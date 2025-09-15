@@ -1,0 +1,62 @@
+.container {
+  padding: 40px;
+}
+.containerMovie {
+  padding: 40px;
+  display: flex;
+}
+.heading,
+.error,
+.loading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
+}
+.text {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
+}
+.textContainer {
+  margin-left: 100px;
+  width: 500px;
+}
+.image {
+  margin-bottom: 7px;
+}
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: 3px solid rgb(252, 70, 100);
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(252, 70, 100);
+  transform: translateX(-100%);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  transform: translateX(0);
+}
