@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${movie.title}`,
       description: `${movie.overview}`,
-      url: `https://08-zustand-tau-kohl.vercel.app/notes/${id}`,
+      url: `https://movie-gallery-project.vercel.app/movies/${id}`,
       images: [
         {
           url: `${movie.backdrop_path}`,
