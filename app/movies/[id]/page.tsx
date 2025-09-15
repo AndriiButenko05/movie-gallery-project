@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `https://movie-gallery-project.vercel.app/movies/${id}`,
       images: [
         {
-          url: `${movie.backdrop_path}`,
+          url: `https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`,
           width: 1200,
           height: 630,
           alt: "Movie Gallery",
