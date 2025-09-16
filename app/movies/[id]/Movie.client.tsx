@@ -18,7 +18,7 @@ export default function MovieClient({ id }: MovieClientProps) {
   const router = useRouter();
   return (
     <div className={css.container}>
-      <button onClick={() => router.push("/movies")} className={css.btn}>
+      <button onClick={() => router.back()} className={css.btn}>
         Go back
       </button>
       <div className={css.containerMovie}>

@@ -12,7 +12,7 @@ export default function MovieGrid({ movies }: MovieGridProps) {
   return (
     <ul className={css.grid}>
       {movies.map((movie) => (
-        <li key={movie.id} onClick={() => router.push(`movies/${movie.id}`)}>
+        <li key={movie.id} onClick={() => router.push(`/movies/${movie.id}`)}>
           <div className={css.card}>
             <Image
               src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}

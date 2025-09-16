@@ -14,6 +14,7 @@ function Footer() {
               andrejbutik@gmail.com
             </Link>
           </p>
+          <p>Powered by: themoviedb</p>
         </div>
       </div>
     </footer>

@@ -6,11 +6,22 @@ import {
 } from "@tanstack/react-query";
 import MoviesClient from "./Movies.client";
 import css from "./page.module.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: `Search Popular Movies`,
+  description: `Search Popular Movies and decide what to watch today`,
+  openGraph: {
+    title: `Search Popular Movies`,
+    description: `Search Popular Movies and decide what to watch today`,
+    url: `https://movie-gallery-project.vercel.app/movies/trending`,
+  },
+};
 
 export default async function Movies() {
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
-    queryKey: ["movies"],
+    queryKey: ["trendingMovies"],
     queryFn: () => getPopularMovies(1),
   });
 

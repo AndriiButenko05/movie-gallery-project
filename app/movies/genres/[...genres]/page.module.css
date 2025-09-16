@@ -1,0 +1,10 @@
+.heading,
+.loading,
+.error {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 15px;
+}
