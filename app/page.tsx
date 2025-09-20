@@ -8,7 +8,7 @@ export default function Home() {
           <h1 className={styles.heading}>Welcome to Movie Gallery</h1>
           <p className={styles.text}>
             Here you can explore movies.Want to know when your favorite movie
-            was released or you was in the cast? <br />
+            was released or watch review? <br />
             Feel free to surf this website
           </p>
         </div>

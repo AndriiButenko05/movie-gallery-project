@@ -50,3 +50,10 @@
   line-height: 150%;
   letter-spacing: 0.02em;
 }
+.notFound {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
